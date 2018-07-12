@@ -1,0 +1,107 @@
+/* start main rules */
+
+body {padding: 0; margin: 0; font-family: candara; overflow: hidden}
+
+.circle {border-radius: 50%}
+
+/* end main rules */
+
+/* start header */
+
+header {text-align: center; margin-top: 15px}
+
+div#score-div {display: inline-block;}
+
+div#score-div span {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    position: relative;
+    margin-right: 5px;
+}
+
+span.lvl-1-score {background-color: #f00;}
+
+span.lvl-1-score:before {
+    content: '2';
+    font-size: 15px;
+    position: absolute;
+    bottom: -20px;
+    left: 8px;
+}
+
+span.lvl-2-score {background-color: #080;}
+
+span.lvl-2-score:before {
+    content: '4';
+    font-size: 15px;
+    position: absolute;
+    bottom: -20px;
+    left: 7px;
+}
+
+span.lvl-3-score {background-color: #00f;}
+
+span.lvl-3-score:before {
+    content: '6';
+    font-size: 15px;
+    position: absolute;
+    bottom: -20px;
+    left: 7px;
+}
+
+
+label {
+    font-size: 21px;
+    margin-left: 100px;
+}
+
+/* end header */
+
+/* start level 1 && level 2 && level 3*/
+
+div.lvl-1 {display: inline-block;}
+div.lvl-2 {display: none}
+div.lvl-3 {display: none}
+
+div.lvl-1-circle, div.lvl-2-circle,  div.lvl-3-circle{
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+    position: absolute;
+}
+
+div.lvl-1-circle {background-color: #f00}
+div.lvl-2-circle {background-color: #080}
+div.lvl-3-circle {background-color: #00f}
+
+/* this attributes with lvl-1 && lvl-2 && lvl-3*/
+
+.win, .lose {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    margin-top: 150px;
+    text-align: center;
+    display: none;
+}
+
+div.win h1 {font-size: 65px}
+div.win h2 {font-size: 35px}
+
+
+
+div.win h2 a, div.win h2 span, .lose a {
+    color: #00f;
+    text-decoration: none;
+}
+div.win h2 a:hover, div.win h2 span:hover, .lose a:hover
+{
+    border-bottom: 3px solid #00f; cursor: pointer
+}
+
+
+.lose {font-size: 65px}
+.lose a {font-size: 45px}
+
+/* end level 1 && level 2 */

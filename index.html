@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Simple Game</title>
+        <link rel="stylesheet" href="style.css" >
+    </head>
+    <body>
+        
+        <header>
+            <div id="score-div">
+                <span class="lvl-1-score circle"></span>
+                <span class="lvl-2-score circle"></span>
+                <span class="lvl-3-score circle"></span>
+            </div>
+            <label class="score">Your Score: <span>0</span></label>
+            <label class="circles-remaining">Circles Remaining: <span>5</span></label>
+            <label class="clicks-remaining">Clicks Remaining: <span>15</span></label>
+        </header>
+        
+        
+        <div class="lvl-1">
+            <div class="lvl-1-circle circle"></div>
+            <div class="lvl-1-circle circle"></div>
+            <div class="lvl-1-circle circle"></div>
+            <div class="lvl-1-circle circle"></div>
+            <div class="lvl-1-circle circle"></div>
+            <div class="lvl-1-win win">
+                <h1>Congratulations <br> You Win</h1>
+                <h2>Now You Can Start <span>Level 2</span></h2>
+            </div>
+        </div>
+        
+        
+        <div class="lvl-2">
+            <div class="lvl-2-circle circle"></div>
+            <div class="lvl-2-circle circle"></div>
+            <div class="lvl-2-circle circle"></div>
+            <div class="lvl-2-circle circle"></div>
+            <div class="lvl-2-circle circle"></div>
+            <div class="lvl-2-win  win">
+                <h1>Congratulations :) You Win <br> and you will take 10 clicks bonus</h1>
+                <h2>Now You Can Start <span>Level 3</span></h2>
+            </div>
+        </div>
+        
+        
+        <div class="lvl-3">
+            <div class="lvl-3-circle circle"></div>
+            <div class="lvl-3-circle circle"></div>
+            <div class="lvl-3-circle circle"></div>
+            <div class="lvl-3-circle circle"></div>
+            <div class="lvl-3-circle circle"></div>
+            <div class="lvl-3-win  win">
+                <h1>Congratulations <br> You Win</h1>
+                <h2>You Finished The Game <a href="index.html">Restart</a></h2>
+            </div>
+        </div>
+        
+        
+        <h1 class="lose">
+            Game Over
+            <a href="index.html">Restart</a>
+        </h1>
+        
+        <script src="jquery-3.1.1.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
